@@ -37,12 +37,13 @@
 <script>
 	function makeNewDiv(){
 		/* make the div and its text */
-		let element = document.createElement("p")
+		let element = document.createElement("div")
 		element.innerHTML = "an item after 3"
 		element.style.color = "orange"
 
 		/* add it to the container */
-		document.getElementById('target').appendChild(element)
+		let container = document.getElementById('target')
+		container.appendChild(element)
 		
 	}
 </script>
